@@ -18,6 +18,25 @@ function checkEmail() {
     alert('please use " @" ')
   }
 }
+function checkPassword() {
+  let pass1 = document.getElementById('password-field')
+  let pass2 = document.getElementById('password2')
+
+   if (pass1.value.length <= 8 && pass1.value.length !== 0) {
+    alert('use more then 6 digits')
+  }
+
+  else if (pass1.value === pass2.value && pass1.value !== '') {
+    alert('FINE')
+  }
+  else if (pass1.value !== pass2.value) {
+    alert("password don't match")
+  }
+  else {
+    return pass1 = pass1.value + pass2.value
+  }
+
+}
 password.addEventListener("focus", function(){
 	strengthContainer.style.display = "block";
 });
