@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="styles.css">
+	<title>Check password strength</title>
+</head>
+<body>
+
+	<form autocomplete="off" onsubmit="return false">
+
+		<div class="password-container">
+			<form action="" class="form">
+				<label>Registration</label>
+			<input class="placeholder" id="email" type="email" placeholder="email">
+			<div class="passbox">			<input placeholder="password" type="password" name="password" id="password-field" >
+
+				<span class="showpassword">
+					
+					<img class="togglepassword" src="./images/icons8-private-lock-30.png" alt="">
+
+				</span>
+			</div>
+			<div class="passbox">
+				<input id="password2" class="passwords" type="password" placeholder="repeat password">
+				<span class="showpassword">
+
+				</span>			
+			<div class="strength-container">
+				<p class="title">
+					Password strength:
+					<span class="strength-text"></span>
+				</p>
+				
+				<div class="strength-bar-wrapper">
+					<div id="strength-bar"></div>
+				</div>
+				<p class="strength-description">
+					Passwords should be at least <i>7</i> characters long and max <i>12</i>. <br>
+					Try use <strong>lowercasing</strong> and <strong>uppercasing</strong>, <strong>numbers</strong> and <strong>symbols</strong>.
+				</p>
+				<div class="arrow"></div>
+			</div>	
+		</div>
+
+		<button id="submit" type="submit" class="signup">SUBMIT</button>
+			</form>
+			
+	</form>
+
+	<script src="script.js"></script> <!-- Link to the javascript file -->
+</body>
+</html>
